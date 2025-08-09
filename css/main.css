@@ -1,0 +1,91 @@
+/* =====================
+   Global Styles
+===================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background colors for each page (you can change these) */
+body.home {
+  background-color: #E5CDAD; /* Home */
+}
+
+body.about {
+  background-color: #C7C6C3; /* About */
+}
+
+body.missions {
+  background-color: #D9CCA4; /* Missions */
+}
+
+/* =====================
+   Sections & Layout
+===================== */
+.section-pad {
+  padding: 3rem 1rem;
+}
+
+.afc-shadow {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================
+   Hover Effects
+===================== */
+a.nav-link {
+  transition: color 0.3s ease;
+}
+
+a.nav-link:hover,
+a.nav-link:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =====================
+   Accessibility Skip Link
+===================== */
+.visually-hidden-focusable {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.visually-hidden-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  padding: 0.5rem;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* =====================
+   Fade-in Animation
+===================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
